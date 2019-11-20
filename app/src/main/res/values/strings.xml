@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HomeWorkIntents</string>
+    <string name="to_map_activity">TO MAP</string>
+    <string name="to_personal_activity">TO PERSONAL</string>
+    <string name="to_search_activity">TO SEARCH</string>
+    <string name="to_catalog_activity">BACK TO CATALOG</string>
+</resources>
