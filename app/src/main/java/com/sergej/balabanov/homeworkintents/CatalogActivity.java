@@ -2,7 +2,6 @@ package com.sergej.balabanov.homeworkintents;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -40,13 +39,9 @@ public class CatalogActivity extends AppCompatActivity {
         mCatalogTextView = findViewById(R.id.catalog_text_view);
         mToMapActivityButton = findViewById(R.id.to_map_activity_button);
         mTestModel = new TestModel(mName, mSurname, mIntegerList1, mIntegerList2);
-
-
-        mCatalogTextView.setText(mName + "  " + mSurname);
+        mCatalogTextView.setText(mName + " " + mSurname);
         mToMapActivityButton.setText(R.string.to_map_activity);
         mToMapActivityButton.setOnClickListener(this::onClick);
-
-
     }
 
     private void onClick(View view) {
@@ -61,7 +56,6 @@ public class CatalogActivity extends AppCompatActivity {
         outState.putString(SAVED_STRING_SURNAME, mSurname);
         outState.putParcelable(SAVED_PARCEL, mTestModel);
         super.onSaveInstanceState(outState);
-
     }
 
     @Override

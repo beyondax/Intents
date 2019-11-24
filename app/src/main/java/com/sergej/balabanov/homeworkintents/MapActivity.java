@@ -1,13 +1,12 @@
 package com.sergej.balabanov.homeworkintents;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MapActivity extends AppCompatActivity {
 
@@ -30,6 +29,7 @@ public class MapActivity extends AppCompatActivity {
         mToPersonalActivityButton = findViewById(R.id.to_personal_activity_button);
         mMapTextView = findViewById(R.id.map_text_view);
         mMapTextView.setText(mName + " " + mSurname);
+        mToPersonalActivityButton.setText(R.string.to_personal_activity);
         mToPersonalActivityButton.setOnClickListener(this::onClick);
     }
 
